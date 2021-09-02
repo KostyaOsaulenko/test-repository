@@ -22,6 +22,20 @@ namespace App4
                 Console.Write($"{i} ");
             }
 
+            int[] m1 = new int[n];
+            int[] m2 = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                if (randomarray[i] % 2 == 0)
+                {
+                    m1[i] = randomarray[i];
+                }
+                else
+                {
+                    m2[i] = randomarray[i];
+                }
+            }
+
             static int[] GetRandomeArray(int size, int min, int max)
             {
                 var r = new Random();
